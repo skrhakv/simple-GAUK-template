@@ -1,0 +1,29 @@
+@INPROCEEDINGS {skrhak2023bibm,
+author = {V. Škrhák and K. Riedlova and M. Novotny and D. Hoksza},
+booktitle = {2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+title = {Cryptic binding site prediction with protein language models},
+year = {2023},
+volume = {},
+issn = {},
+pages = {2883-2888},
+abstract = {Structure-based identification of protein-ligand binding sites plays a crucial role in the initial stages of rational drug discovery pipelines. As machine learning methods are increasingly integrated into the process, a significant challenge arises while training these methods, as labeled data are typically derived from ligand-bound structures. Consequently, these methods struggle to detect binding sites within proteins where the binding site is concealed in the absence of a bound ligand. Here, we explore the possibility of harnessing protein language models to address this issue and compare their performance against state-of-the-art methods, both those specialized in the cryptic binding site (CBS) detection and those that are not. We show that applying pre-trained protein-language models in a relatively straightforward manner enables us to surpass the state-of-the-art of CBS prediction.},
+keywords = {proteins;training;drugs;protein engineering;pipelines;neural networks;machine learning},
+doi = {10.1109/BIBM58861.2023.10385497},
+url = {https://doi.ieeecomputersociety.org/10.1109/BIBM58861.2023.10385497},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {dec}
+}
+
+@article {skrhak2024cryptobench,
+	author = {Škrhák, Vít and Novotný, Marian and Feidakis, Christos P. and Krivák, Radoslav and Hoksza, David},
+	title = {CryptoBench: Cryptic protein-ligand binding sites dataset and benchmark},
+	elocation-id = {2024.08.20.608828},
+	year = {2024},
+	doi = {10.1101/2024.08.20.608828},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Structure-based methods for detecting protein-ligand binding sites play a crucial role in various domains, from fundamental research to biomedical applications. However, current prediction methodologies often rely on holo (ligand-bound) protein conformations for training and evaluation, overlooking the significance of the apo (ligand-free) states. This oversight is particularly problematic in the case of cryptic binding sites (CBSs) where holo-based assessment yields unrealistic performance expectations. To advance the development in this domain, we introduce CryptoBench, a benchmark dataset tailored for training and evaluating novel CBS prediction methodologies. CryptoBench is constructed upon a large collection of apo-holo protein pairs, grouped by UniProtID, clustered by sequence identity, and filtered to contain only structures with substantial structural change in the binding site. CryptoBench comprises 1,107 structures with predefined cross-validation splits, making it the most extensive CBS dataset to date. To establish a performance baseline, we measured the predictive power of sequence- and structure-based CBS residue prediction methods using the benchmark. We selected PocketMiner as the state-of-the-art representative of the structure-based methods for CBS detection, and P2Rank, a widely-used structure-based method for general binding site prediction that is not specifically tailored for cryptic sites. For sequence-based approaches, we trained a neural network to classify binding residues using protein language model embeddings. Our sequence-based approach outperformed PocketMiner and P2Rank across key metrics, including AUC, AUPRC, MCC, and F1 scores. These results provide baseline benchmark results for future CBS and potentially also non-CBS prediction endeavors, leveraging CryptoBench as the foundational platform for further advancements in the field.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2024/08/21/2024.08.20.608828},
+	eprint = {https://www.biorxiv.org/content/early/2024/08/21/2024.08.20.608828.full.pdf},
+	journal = {bioRxiv}
+}
